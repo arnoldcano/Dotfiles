@@ -60,6 +60,13 @@ set novisualbell
 "use system clipboard
 set clipboard=unnamed
 
+"tree mode default
+let g:netrw_liststyle=3
+"open file in previous buffer
+let g:netrw_browse_split=4
+"preview in vertical split
+let g:netrw_preview=1
+
 "enable filetype detection
 filetype on
 "enable filetype-specific indenting
