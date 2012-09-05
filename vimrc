@@ -13,6 +13,8 @@ syntax on
 "select scheme
 colorscheme desert
 
+"set dark background
+set background=dark
 "show line numbers
 set number
 "show position
@@ -39,6 +41,8 @@ set ignorecase
 set infercase
 "search case sensitive if caps
 set smartcase
+"enable backspace in insert mode
+set backspace=eol,start,indent
 "detect file changes
 set autoread
 "no backups
@@ -49,6 +53,8 @@ set noswapfile
 set nowrap
 "use auto indent
 set autoindent
+"use smart indent
+set smartindent
 "use mouse everywhere
 set mouse=a
 "no audible bell
