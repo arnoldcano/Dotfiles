@@ -1,6 +1,9 @@
 "plugins:
 " pathogen
 " ctrlp
+" vim-ruby
+" vim-javascript
+" vimerl
 
 "pathogen
 call pathogen#infect()
