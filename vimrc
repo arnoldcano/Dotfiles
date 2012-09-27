@@ -1,6 +1,7 @@
 "plugins:
 " pathogen
 " ctrlp
+" vim-powerline
 " vim-ruby
 " vim-javascript
 " vimerl
@@ -24,6 +25,8 @@ set number
 set ruler
 "show status
 set laststatus=2
+"show glyphs
+set encoding=utf-8
 "show mode
 set showmode
 "show matching parenthesis
@@ -90,3 +93,7 @@ autocmd FileType * set ts=4 sw=4 et
 autocmd FileType ruby,eruby,yaml set ts=2 sw=2 et
 "javascript
 autocmd FileType javascript set ts=2 sw=2 et
+
+"enable powerline
+set t_Co=256
+let g:Powerline_symbols = 'unicode'
