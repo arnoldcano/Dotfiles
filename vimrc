@@ -12,6 +12,10 @@ call pathogen#infect()
 "set no compatibility mode
 set nocompatible
 
+"enable powerline
+set t_Co=256
+let g:Powerline_symbols = 'unicode'
+
 "enable syntax highlighting
 syntax on
 "select scheme
@@ -70,16 +74,6 @@ set novisualbell
 "use system clipboard
 set clipboard=unnamed
 
-"disable arrow keys
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
-
 "enable filetype detection
 filetype on
 "enable filetype-specific indenting
@@ -93,7 +87,3 @@ autocmd FileType * set ts=4 sw=4 et
 autocmd FileType ruby,eruby,yaml set ts=2 sw=2 et
 "javascript
 autocmd FileType javascript set ts=2 sw=2 et
-
-"enable powerline
-set t_Co=256
-let g:Powerline_symbols = 'unicode'
