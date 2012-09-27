@@ -12,15 +12,11 @@ call pathogen#infect()
 "set no compatibility mode
 set nocompatible
 
-"enable powerline
-set t_Co=256
-let g:Powerline_symbols = 'unicode'
-
 "enable syntax highlighting
 syntax on
-"select scheme
-colorscheme desert
 
+"set 256 colors
+set t_Co=256
 "set dark background
 set background=dark
 "show line numbers
@@ -73,6 +69,12 @@ set noerrorbells
 set novisualbell
 "use system clipboard
 set clipboard=unnamed
+
+"select scheme
+colorscheme desert
+
+"enable powerline
+let g:Powerline_symbols = 'unicode'
 
 "enable filetype detection
 filetype on
