@@ -56,11 +56,9 @@ set autoread
 "enable backups
 set backup
 "directory for backup files
-set backupdir=/tmp
+set backupdir=~/.tmp/backup//
 "directory for swap files
-set dir=/tmp
-"no swap files
-set noswapfile
+set dir=~/.tmp/swap//
 "no wrap
 set nowrap
 "use auto indent
