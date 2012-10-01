@@ -33,6 +33,8 @@ set showmode
 set showmatch
 "show command
 set showcmd
+"show menu in status
+set wildmenu
 "show tabs
 set list
 "tab according to sw not ts
@@ -51,8 +53,12 @@ set smartcase
 set backspace=eol,start,indent
 "detect file changes
 set autoread
-"no backups
-set nobackup
+"enable backups
+set backup
+"directory for backup files
+set backupdir=/tmp
+"directory for swap files
+set dir=/tmp
 "no swap files
 set noswapfile
 "no wrap
