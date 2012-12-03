@@ -75,7 +75,8 @@ set novisualbell
 set clipboard=unnamed
 
 "select scheme
-colorscheme desert
+let g:solarized_termcolors=256
+colorscheme solarized
 
 "enable powerline
 let g:Powerline_symbols = 'unicode'
