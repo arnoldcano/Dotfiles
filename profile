@@ -14,13 +14,3 @@ export EDITOR
 
 # Setting /usr/local/bin before /usr/bin
 PATH="/usr/local/bin:/usr/local/sbin:${PATH}"
-# Setting PATH for Python 2.7
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-# Setting PATH for Node
-PATH="/usr/local/lib/node_modules:${PATH}"
-export PATH
-
-# Setup RVM (Ruby)
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
-# Setup Kerl (Erlang)
-[[ -s "$HOME/.kerl/installs/current/activate" ]] && . "$HOME/.kerl/installs/current/activate"
