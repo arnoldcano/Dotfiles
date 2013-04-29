@@ -81,6 +81,9 @@ colorscheme solarized
 "enable powerline
 let g:Powerline_symbols = 'unicode'
 
+"custom ignore for ctrlp
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$|ct_run'
+
 "enable filetype detection
 filetype on
 "enable filetype-specific indenting
