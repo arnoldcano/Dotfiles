@@ -1,9 +1,8 @@
 "plugins:
 " pathogen
 " ctrlp
-" vim-powerline
+" vim-airline
 " vim-ruby
-" vim-javascript
 " vimerl
 
 "pathogen
@@ -78,9 +77,6 @@ set clipboard=unnamed
 let g:solarized_termcolors=256
 colorscheme solarized
 
-"enable powerline
-let g:Powerline_symbols = 'unicode'
-
 "custom ignore for ctrlp
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$|ct_run'
 
@@ -95,5 +91,3 @@ filetype plugin on
 autocmd FileType * set ts=4 sw=4 et
 "ruby
 autocmd FileType ruby,eruby,yaml set ts=2 sw=2 et
-"javascript
-autocmd FileType javascript set ts=2 sw=2 et

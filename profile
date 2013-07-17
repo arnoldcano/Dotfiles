@@ -1,3 +1,6 @@
+# Load rackspace laptop specific environment
+source ~/.rackspace
+
 # Load in the git branch prompt script
 source ~/.git-prompt.sh
 
