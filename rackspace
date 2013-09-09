@@ -1,3 +1,5 @@
+# Setting PATH for RVM
+PATH="$HOME/.rvm/bin:${PATH}"
 # Setting PATH for Python 2.7
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 # Setting PATH for Node
