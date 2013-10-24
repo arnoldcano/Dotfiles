@@ -16,3 +16,6 @@
 [submodule "vim/bundle/vim-airline"]
 	path = vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
+[submodule "vim-obsession"]
+	path = vim-obsession
+	url = git://github.com/tpope/vim-obsession.git
