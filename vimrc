@@ -4,7 +4,6 @@
 " vim-airline
 " vim-ruby
 " vimerl
-" vim-obsession
 
 "pathogen
 call pathogen#infect()
