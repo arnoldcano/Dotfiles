@@ -4,6 +4,7 @@
 " vim-airline
 " vim-ruby
 " vimerl
+" tagbar
 
 "pathogen
 call pathogen#infect()
