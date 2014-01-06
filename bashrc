@@ -113,6 +113,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export EDITOR=vim
+
 # Setup Kerl (Erlang)
 if [ -e ~/.kerl/installs/current/activate ]; then
     . ~/.kerl/installs/current/activate
