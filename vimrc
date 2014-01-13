@@ -52,12 +52,8 @@ set smartcase
 set backspace=eol,start,indent
 "detect file changes
 set autoread
-"enable backups
-set backup
-"directory for backup files
-set backupdir=~/.tmp/backup//
-"directory for swap files
-set dir=~/.tmp/swap//
+"disable backups
+set nobackup
 "no wrap
 set nowrap
 "use auto indent
