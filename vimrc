@@ -4,6 +4,7 @@
 " vim-airline
 " vim-ruby
 " vimerl
+" tmuxline.vim
 
 "pathogen
 call pathogen#infect()
@@ -75,6 +76,15 @@ colorscheme solarized
 
 "custom ignore for ctrlp
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$|ct_run'
+
+"setup tmuxline for vim-airline
+let g:tmuxline_powerline_separators = 0
+let g:tmuxline_separators = {
+    \ 'left' : '',
+    \ 'left_alt': '>',
+    \ 'right' : '',
+    \ 'right_alt' : '<',
+    \ 'space' : ' '}
 
 "enable filetype detection
 filetype on
