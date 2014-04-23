@@ -3,7 +3,6 @@
 " ctrlp
 " vim-airline
 " vim-ruby
-" vimerl
 " tmuxline.vim
 
 "pathogen
