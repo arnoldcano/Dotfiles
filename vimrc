@@ -71,9 +71,6 @@ set novisualbell
 "use system clipboard
 set clipboard=unnamed
 
-"set leader
-let mapleader = ','
-
 "select scheme
 let g:solarized_termcolors=256
 colorscheme solarized
@@ -89,6 +86,12 @@ let g:tmuxline_separators = {
     \ 'right' : '',
     \ 'right_alt' : '<',
     \ 'space' : ' '}
+
+"set leader
+let mapleader = ','
+
+"gofmt with spaces not tabs
+let g:go_fmt_command = "gofmt -tabs=false"
 
 "enable filetype detection
 filetype on
