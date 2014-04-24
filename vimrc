@@ -4,6 +4,8 @@
 " vim-airline
 " vim-ruby
 " tmuxline.vim
+" vim-go
+" YouCompleteMe
 
 "pathogen
 call pathogen#infect()
@@ -69,6 +71,9 @@ set novisualbell
 "use system clipboard
 set clipboard=unnamed
 
+"set leader
+let mapleader = ','
+
 "select scheme
 let g:solarized_termcolors=256
 colorscheme solarized
@@ -96,3 +101,5 @@ filetype plugin on
 autocmd FileType * set ts=4 sw=4 et
 "ruby
 autocmd FileType ruby,eruby,yaml set ts=2 sw=2 et
+"go source definition in new tab
+autocmd Filetype go nnoremap <leader>t :tab split <CR>:exe "GoDef"<CR>
