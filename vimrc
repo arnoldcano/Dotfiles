@@ -36,8 +36,6 @@ set showmatch
 set showcmd
 "show menu in status
 set wildmenu
-"show tabs
-set list
 "tab according to sw not ts
 set smarttab
 "highlighting in search
@@ -71,6 +69,9 @@ set novisualbell
 "use system clipboard
 set clipboard=unnamed
 
+"set leader
+let mapleader = ','
+
 "select scheme
 let g:solarized_termcolors=256
 colorscheme solarized
@@ -87,12 +88,6 @@ let g:tmuxline_separators = {
     \ 'right_alt' : '<',
     \ 'space' : ' '}
 
-"set leader
-let mapleader = ','
-
-"gofmt with spaces not tabs
-let g:go_fmt_command = "gofmt -tabs=false"
-
 "enable filetype detection
 filetype on
 "enable filetype-specific indenting
@@ -105,4 +100,4 @@ autocmd FileType * set ts=4 sw=4 et
 "ruby
 autocmd FileType ruby,eruby,yaml set ts=2 sw=2 et
 "go source definition in new tab
-autocmd Filetype go nnoremap <leader>t :tab split <CR>:exe "GoDef"<CR>
+autocmd Filetype go nnoremap <leader>gd :tab split <CR>:exe "GoDef"<CR>
