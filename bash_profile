@@ -6,5 +6,6 @@ source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 source "${HOME}/.bashrc"
 
 # Load version managers
+source "${HOME}/.nvm/nvm.sh"      # NVM
 source "${HOME}/.rvm/scripts/rvm" # RVM
 source "${HOME}/.gvm/scripts/gvm" # GVM
