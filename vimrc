@@ -9,6 +9,7 @@
 " tagbar
 " syntastic
 " nerdtree
+" vim-fugitive
 
 "pathogen
 call pathogen#infect()
