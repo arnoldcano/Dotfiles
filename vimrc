@@ -140,11 +140,11 @@ function! ToggleErrors()
 endfunction
 
 "go class outline in tagbar
-map <leader>tt :TagbarToggle<CR>
+map <leader>t :TagbarToggle<CR>
 "directory listing 
-map <leader>nt :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 "errors listing 
-map <leader>et :call ToggleErrors()<CR>
+map <leader>e :call ToggleErrors()<CR>
 
 "enable filetype detection
 filetype on
@@ -157,5 +157,5 @@ filetype plugin on
 autocmd FileType * set ts=4 sw=4 et
 "ruby
 autocmd FileType ruby,eruby,yaml set ts=2 sw=2 et
-"go source definition in new tab
-autocmd Filetype go nnoremap <leader>gd :tab split <CR>:exe "GoDef"<CR>
+"go source definition in new split
+autocmd Filetype go nnoremap <leader>d :sp <CR>:exe "GoDef"<CR>
