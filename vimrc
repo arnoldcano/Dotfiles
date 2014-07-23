@@ -10,6 +10,7 @@
 " syntastic
 " nerdtree
 " vim-fugitive
+" vim-json
 
 "pathogen
 call pathogen#infect()
@@ -139,6 +140,9 @@ function! ToggleErrors()
     endif
 endfunction
 
+"disable concealing double quotes
+let g:vim_json_syntax_conceal = 0
+
 "go class outline in tagbar
 map <leader>t :TagbarToggle<CR>
 "directory listing 
@@ -159,3 +163,5 @@ autocmd FileType * set ts=4 sw=4 et
 autocmd FileType ruby,eruby,yaml set ts=2 sw=2 et
 "go source definition in new split
 autocmd Filetype go nnoremap <leader>d :sp <CR>:exe "GoDef"<CR>
+"markdown
+autocmd BufRead,BufNewFile *.md set filetype=markdown
