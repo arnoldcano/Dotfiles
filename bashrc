@@ -16,4 +16,6 @@ export EDITOR=vim
 
 # Setup paths
 export PATH="/usr/local/bin:${PATH}"   # Homebrew
+export PATH="${GOPATH}/bin::${PATH}"   # Go 
 export PATH="${PATH}:${HOME}/.rvm/bin" # RVM
+export PATH="${PATH}:${HOME}/bin"
