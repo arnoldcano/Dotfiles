@@ -15,7 +15,7 @@ PS1="${GREEN}\u@\h${WHITE}:${BLUE}\w${RED}${GIT_BRANCH}${WHITE}\$ "
 export EDITOR=vim
 
 # Setup paths
-export PATH="/usr/local/bin:${PATH}"   # Homebrew
-export PATH="${PATH}:${GOPATH}/bin"    # Go 
-export PATH="${PATH}:${HOME}/.rvm/bin" # RVM
-export PATH="${PATH}:${HOME}/bin"
+export PATH="/usr/local/bin:$PATH" # Homebrew
+export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$GOPATH/bin"    # Go 
+export PATH="$PATH:$HOME/.rvm/bin" # RVM
