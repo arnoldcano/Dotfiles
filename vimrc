@@ -5,7 +5,6 @@
 " vim-ruby
 " tmuxline.vim
 " vim-go
-" YouCompleteMe
 " tagbar
 " syntastic
 " nerdtree
