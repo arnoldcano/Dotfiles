@@ -10,6 +10,7 @@
 " nerdtree
 " vim-fugitive
 " vim-json
+" YouCompleteMe 
 
 "pathogen
 call pathogen#infect()
@@ -141,6 +142,9 @@ endfunction
 
 "disable concealing double quotes
 let g:vim_json_syntax_conceal = 0
+
+"disable ruby for ycm (segfault)
+let g:ycm_filetype_blacklist = { 'ruby' : 1 }
 
 "go class outline in tagbar
 map <leader>t :TagbarToggle<CR>
