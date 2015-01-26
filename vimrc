@@ -164,7 +164,5 @@ filetype plugin on
 autocmd FileType * set ts=4 sw=4 et
 "ruby
 autocmd FileType ruby,eruby,yaml set ts=2 sw=2 et
-"go source definition in new split
-autocmd Filetype go nnoremap <leader>d :sp <CR>:exe "GoDef"<CR>
 "markdown
 autocmd BufRead,BufNewFile *.md set filetype=markdown
