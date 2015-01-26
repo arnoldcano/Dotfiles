@@ -146,6 +146,14 @@ let g:vim_json_syntax_conceal = 0
 "disable ruby for ycm (segfault)
 let g:ycm_filetype_blacklist = { 'ruby' : 1 }
 
+"run goimports on save
+let g:go_fmt_command = "goimports"
+
+"enable more go syntax highlighting
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+
 "go class outline in tagbar
 map <leader>t :TagbarToggle<CR>
 "directory listing 
