@@ -11,6 +11,7 @@
 " vim-fugitive
 " vim-json
 " YouCompleteMe 
+" vim-gitgutter
 
 "pathogen
 call pathogen#infect()
