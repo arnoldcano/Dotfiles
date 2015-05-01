@@ -77,6 +77,8 @@ set clipboard=unnamed
 set omnifunc=syntaxcomplete#Complete
 "use current buffer for files
 set autochdir
+"show whitespace characters
+set listchars=tab:▸\ ,eol:¬
 
 "set leader
 let mapleader = ','
@@ -131,14 +133,14 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': ['html'] }
 "check on buffer open
-let g:syntastic_check_on_open = 1
-function! ToggleErrors()
-    let old_last_winnr = winnr('$')
-    lclose
-    if old_last_winnr == winnr('$')
-        Errors
-    endif
-endfunction
+"let g:syntastic_check_on_open = 1
+"function! ToggleErrors()
+"    let old_last_winnr = winnr('$')
+"    lclose
+"    if old_last_winnr == winnr('$')
+"        Errors
+"    endif
+"endfunction
 
 "disable concealing double quotes
 let g:vim_json_syntax_conceal = 0
@@ -159,7 +161,7 @@ map <leader>t :TagbarToggle<CR>
 "directory listing 
 map <leader>n :NERDTreeToggle<CR>
 "errors listing 
-map <leader>e :call ToggleErrors()<CR>
+"map <leader>e :call ToggleErrors()<CR>
 
 "enable filetype detection
 filetype on
