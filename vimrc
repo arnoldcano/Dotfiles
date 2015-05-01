@@ -157,6 +157,9 @@ let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 
+"enable git symbols
+let g:gitgutter_sign_column_always = 1
+
 "go class outline in tagbar
 map <leader>t :TagbarToggle<CR>
 "directory listing 
