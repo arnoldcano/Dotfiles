@@ -11,6 +11,7 @@
 " vim-fugitive
 " vim-json
 " YouCompleteMe 
+" vim-gitgutter
 
 "pathogen
 call pathogen#infect()
@@ -156,6 +157,9 @@ let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 
+"enable git symbols
+let g:gitgutter_sign_column_always = 1
+
 "go class outline in tagbar
 map <leader>t :TagbarToggle<CR>
 "directory listing 
@@ -163,7 +167,7 @@ map <leader>n :NERDTreeToggle<CR>
 "errors listing 
 map <leader>e :call ToggleErrors()<CR>
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+map <leader>l :set list!<CR>
 
 "enable filetype detection
 filetype on
