@@ -26,6 +26,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
 "vim-airline
+let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 "vim-polyglot
