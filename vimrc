@@ -29,11 +29,27 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
+"promptline.vim
+let g:promptline_theme = 'onedark'
+
 "vim-polyglot
 let g:jsx_ext_required = 0
 
 "vim-test
-let test#strategy = "dispatch"
 nmap <silent> <leader>r :TestNearest<CR>
 nmap <silent> <leader>t :TestFile<CR>
 nmap <silent> <leader>y :TestSuite<CR>
+
+"vim-go
+let g:go_fmt_command = "goimports"
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+"tagbar
+nmap <silent> <leader>T :TagbarToggle<CR>
