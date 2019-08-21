@@ -8,3 +8,6 @@ source "$HOME/.bashrc"
 # Load version managers
 source "$HOME/.nvm/nvm.sh"
 source "$HOME/.rvm/scripts/rvm"
+
+# Load GA aliases and variables
+source "$HOME/.ga"
